@@ -1,0 +1,25 @@
+{
+  "name": "Simg",
+  "main": "simg.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/krunkosaurus/simg",
+  "authors": [
+    "Mauvis Ledford <mauvis@brainswap.me>"
+  ],
+  "description": "JavaScript Class for converting SVG=>PNG and other such things.",
+  "keywords": [
+    "PNG",
+    "transform",
+    "SVG",
+    "D3",
+    "Base64"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

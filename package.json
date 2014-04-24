@@ -1,0 +1,29 @@
+{
+  "name": "simg",
+  "version": "1.0.0",
+  "description": "JavaScript Class for converting SVG=>PNG and other such things.",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-uglify": "~0.4.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krunkosaurus/simg"
+  },
+  "keywords": [
+    "PNG",
+    "transform",
+    "SVG",
+    "D3",
+    "Base64"
+  ],
+  "author": "Mauvis Ledford <mauvis@brainswap.me> (https://github.com/krunkosaurus)",
+  "license": "MIT"
+}

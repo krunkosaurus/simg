@@ -1,0 +1,13 @@
+{
+  "predef": ["ActiveXObject", "console"],
+  "browser" : true,
+  "expr" : true,
+  "undef" : true,
+  "unused" : true,
+  "trailing" : true,
+  "indent": 2,
+  "newcap": true,
+  "curly": true,
+  "camelcase": true,
+  "freeze": true
+}

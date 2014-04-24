@@ -1,14 +1,13 @@
 (function(root){
   var previousSimg = root.Simg;
-
-  Simg = root.Simg = function(svg){
+  var Simg = root.Simg = function(svg){
     this.svg = svg;
-  }
+  };
 
-  Simg.noConflict(){
+  Simg.noConflict = function(){
     root.Simg = previousSimg;
     return this;
-  }
+  };
 
   Simg.getBase64Image = function(img) {
     // From: http://stackoverflow.com/questions/934012/get-image-data-in-javascript
@@ -77,7 +76,7 @@
 
         img.onload = function(){
           cb(img);
-        }
+        };
 
         // Make pngImg's source the canvas data.
         img.setAttribute('src', canvasData);
@@ -122,6 +121,5 @@
         a.click();
       });
     }
-
-  }
+  };
 })(this);
