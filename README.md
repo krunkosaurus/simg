@@ -31,7 +31,7 @@ See example page in repo.
 
 `Simg.toBinaryBlog(svg)` - Internal method for getting blob data.
 
-`Simg.download(svg)` - Shortcut method for triggering a browser download of the SVG as an image.
+`Simg.download(filename)` - Shortcut method for triggering a browser download of the SVG as an image (.png). You can pass optional filename. Default is 'chart'.
 
 # Static methods:
 
@@ -41,10 +41,6 @@ See example page in repo.
 
 # Grunt commands (for development only)
 
-*grunt uglify (also default grunt command)*
+`grunt uglify (also default grunt command)` - Convert source file to compressed file.
 
-Convert source file to compressed file.
-
-*grunt jshint*
-
-Run source file through jshint
+`grunt jshint` - Run source file through jshint
