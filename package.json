@@ -1,6 +1,6 @@
 {
   "name": "simg",
-  "version": "1.0.0",
+  "version": "1.1",
   "description": "JavaScript Class for converting SVG=>PNG and other such things.",
   "main": "Gruntfile.js",
   "dependencies": {
