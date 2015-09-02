@@ -8,7 +8,6 @@ module.exports = function(grunt) {
       // configurable paths
       scriptPath: 'src',
       distPath: 'dist',
-      bowerPath: 'lib',
       testPath: 'test'
     },
 
@@ -29,7 +28,7 @@ module.exports = function(grunt) {
 
     jshint: {
       options: {
-          jshintrc: true
+        jshintrc: true
       },
       all: [
         '<%= simg.scriptPath %>/*.js'
@@ -41,6 +40,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['lint', 'uglify']);
   grunt.registerTask('lint', ['jshint']);
 };

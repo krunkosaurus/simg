@@ -1,3 +1,4 @@
+/*jshint nonstandard:true */
 (function(root){
   var previousSimg = root.Simg;
   var Simg = root.Simg = function(svg){

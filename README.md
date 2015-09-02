@@ -21,7 +21,7 @@ The example page in this repo is also hosted at http://krunkosaurus.github.io/si
 
 # To install
 
-You can install this code in your project in 2 ways:
+You can install this code in your project in 3 ways:
 
 - Clone this git repo.
 - `bower install simg`
@@ -60,9 +60,11 @@ You can install this code in your project in 2 ways:
 
 ### Grunt commands (for development only)
 
-`grunt uglify (also default grunt command)` - Convert source file to compressed file.
+`grunt` - Shortcut for running both `grunt uglify` and `grunt lint`.
 
-`grunt jshint` - Run source file through jshint
+`grunt uglify` - Convert source file to compressed file.
+
+`grunt lint` - Run source file through jshint
 
 # Notes
 
