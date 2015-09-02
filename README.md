@@ -68,11 +68,12 @@ You can install this code in your project in 3 ways:
 
 # Notes
 
-- Simg works best with SVG or Canvas elements that have a fixed width and height.  Percentages occasionally cause issues.  If someone is feeling up to it, a helper function can be added that converts a % width/height SVG or Canvas element to its fixed pixel equivalent before conversion.
+- Many SVG's have transparent backgrounds that look white because of the website under it.  Be sure to set a white background in your SVG if you want it in your image.
+- Simg works best with SVG or Canvas elements that have a fixed width and height.  Percentages occasionally cause issues.  If someone is feeling up to it, a helper function can be added that converts a % width/height SVG or Canvas element to its fixed pixel equivalent before conversion. One day I'll get around to doing it.
 
 # Contributors
 
 Thanks to the following contributors:
 
-- @clemsos (Suggesting naming download file and adding support for non-latin characters ie. Chinese)
-- @headwinds (Creating example page)
+- [@clemsos](https://github.com/clemsos) - Suggesting naming download file and adding support for non-latin characters ie. Chinese.
+- [@headwinds](https://github.com/headwinds) - Creating example page.
