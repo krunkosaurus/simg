@@ -15,7 +15,9 @@ A small SVG to image converter.  Works in browser or PhantomJS.
   simg.download();
   ```
 
-See example page in repo.
+Live example:
+
+The example page in this repo is also hosted at http://krunkosaurus.github.io/simg/
 
 # Instances Methods:
 
