@@ -21,6 +21,9 @@
     "bower_components",
     "test",
     "tests",
-    "lib"
+    "lib",
+    "Gruntfile.js",
+    "bower.json",
+    "package.json"
   ]
 }
