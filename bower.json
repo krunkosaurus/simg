@@ -1,7 +1,7 @@
 {
   "name": "Simg",
   "main": "simg.js",
-  "version": "1.1",
+  "version": "1.1.0",
   "homepage": "https://github.com/krunkosaurus/simg",
   "authors": [
     "Mauvis Ledford <mauvis@brainswap.me>"
@@ -20,6 +20,7 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "lib"
   ]
 }
