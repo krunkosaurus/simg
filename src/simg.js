@@ -63,7 +63,7 @@
       }
 
       // Make the new img's source an SVG image.
-      img.setAttribute('src', 'data:image/svg+xml;base64,'+ btoa(str));
+      img.setAttribute('src', 'data:image/svg+xml;base64,'+ btoa(unescape(encodeURIComponent(str))));
     },
 
     // Returns callback to new img from SVG.
@@ -99,7 +99,7 @@
     toBinaryBlob: function(cb){
       this.toCanvas(function(canvas){
         var dataUrl = canvas.toDataURL().replace(/^data:image\/(png|jpg);base64,/, "");
-        var byteString = atob(dataUrl);
+        var byteString = atob(escape(dataUrl));
         // write the bytes of the string to an ArrayBuffer
         var ab = new ArrayBuffer(byteString.length);
         var ia = new Uint8Array(ab);
