@@ -15,13 +15,21 @@ A small SVG to image converter.  Works in browser or PhantomJS.
   simg.download();
   ```
 
-# Live example:
+# Live example
 
 The example page in this repo is also hosted at http://krunkosaurus.github.io/simg/
 
+# To install
+
+You can install this code in your project in 2 ways:
+
+- Clone this git repo.
+- `bower install simg`
+- Download the latest [uncompressed](https://raw.githubusercontent.com/krunkosaurus/simg/v1.1.0/src/simg.js) or [compressed](https://raw.githubusercontent.com/krunkosaurus/simg/v1.1.0/dist/simg.min.js) src directly.
+
 # Documentation
 
-## Instances Methods:
+### Instances Methods
 
 `Simg.toString(svg)` - Returns SVG as HTML content. Used internally.
 
@@ -37,7 +45,7 @@ The example page in this repo is also hosted at http://krunkosaurus.github.io/si
 
 `Simg.download(filename)` - Shortcut method for triggering a browser download of the SVG as an image (.png). You can pass optional filename. Default is 'chart'.
 
-## Static methods:
+### Static methods:
 
 `Simg.noConflict()` - Allows you to move the Simg class from the global window to inside your own JavaScript library.
 
@@ -45,24 +53,24 @@ The example page in this repo is also hosted at http://krunkosaurus.github.io/si
 
 # Development
 
-## To install
+### To install
 
 - Git clone this repo
 - `npm install`
 
-## Grunt commands (for development only)
+### Grunt commands (for development only)
 
 `grunt uglify (also default grunt command)` - Convert source file to compressed file.
 
 `grunt jshint` - Run source file through jshint
 
-# Notes:
+# Notes
 
 - Simg works best with SVG or Canvas elements that have a fixed width and height.  Percentages occasionally cause issues.  If someone is feeling up to it, a helper function can be added that converts a % width/height SVG or Canvas element to its fixed pixel equivalent before conversion.
 
 # Contributors
 
-Thanks to the following contributors
+Thanks to the following contributors:
 
 - @clemsos (Suggesting naming download file and adding support for non-latin characters ie. Chinese)
 - @headwinds (Creating example page)
