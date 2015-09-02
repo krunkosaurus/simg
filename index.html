@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Simple Simg example</title>
+    </head>
+
+    <style>
+        body {
+          font-family: Helvetica, sans-serif;
+          color: #666;
+        }
+    </style>
+
+<body>
+    <div style="width: 500px; height: 250px; border: 2px solid #ddd">
+        <svg id="my-svg" pointer-events="none" width="500px" height="250px" id="svg_vis" style="position: absolute;">
+            <g id="bubbleChart">
+                <g class="bubbleElement" transform="translate(200,125)">
+                    <circle pointer-events="all" class="bubbleCircle bubbleEvents" fill="rgb(14, 191, 233)" stroke-width="2" stroke="#0985a3" stroke-opacity="1" id="bubble_724" style="" r="80" opacity="1"></circle>
+
+                    <text pointer-events="none" text-anchor="middle" dy="-0.5em" class="bubbleText" style="font-family : 'DINMittelEF-Bold', Georgia, serif; font-weight : bold; font-size : 18px; fill : #000" opacity="1">HELLO WORLD</text>
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <h1>Simple Simg Example: Converting SVG into PNG</h1>
+    <p></p>
+    <pre>
+var svgElement = document.getElementById('my-svg');
+
+document.getElementById('convertBtn').onclick = function(){
+  var simg = new Simg(svgElement);
+  // Replace the current SVG with an image version of it.
+  simg.replace();
+  // And trigger a download of the rendered image.
+  simg.download();
+};
+    </pre>
+
+    <button id="convertBtn">Convert SVG to PNG</button>
+
+    <script src="../src/simg.js"></script>
+    <script>
+
+
+var svgElement = document.getElementById('my-svg');
+
+document.getElementById('convertBtn').onclick = function(){
+  var simg = new Simg(svgElement);
+  // Replace the current SVG with an image version of it.
+  simg.replace();
+  // And trigger a download of the rendered image.
+  simg.download('awesome');
+};
+
+</script>
+
+<p>Thank you to <a href="https://github.com/headwinds">@headwinds</a> for creating this example page.<p>
+
+</body>
+
+</html>
