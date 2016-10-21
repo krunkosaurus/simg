@@ -77,3 +77,4 @@ Thanks to the following contributors:
 
 - [@clemsos](https://github.com/clemsos) - Suggesting naming download file and adding support for non-latin characters ie. Chinese.
 - [@headwinds](https://github.com/headwinds) - Creating example page.
+- [@brightrain](https://github.com/brightrain) - For Firefox workaround.
