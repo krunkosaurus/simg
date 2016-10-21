@@ -24,6 +24,7 @@
   };
 
   Simg.prototype = {
+
     // Return SVG text.
     toString: function(svg){
       if (!svg){
@@ -120,9 +121,14 @@
       }
       this.toImg(function(img){
         var a = document.createElement("a");
+        // Name of the file being downloaded.
         a.download = filename + ".png";
         a.href = img.getAttribute('src');
+        // Support for Firefox which requires inserting in dom.
+        a.style.display = 'none';
+        document.body.appendChild(a);
         a.click();
+        document.body.removeChild(a);
       });
     }
   };
