@@ -37,7 +37,7 @@
       ].forEach(function(item){
         svg.setAttribute(item[0], item[1]);
       });
-      return svg.parentNode.innerHTML;
+      return svg.outerHTML;
     },
 
     // Return canvas with this SVG drawn inside.
